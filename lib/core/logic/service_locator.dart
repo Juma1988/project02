@@ -1,5 +1,5 @@
-import 'package:app/core/logic/dio_helper.dart';
 import 'package:get_it/get_it.dart';
+import 'package:app/core/logic/dio_helper.dart';
 
 void initServiceLocator() {
   final container = GetIt.instance;

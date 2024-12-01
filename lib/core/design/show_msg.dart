@@ -1,9 +1,9 @@
-import 'package:app/core/design/navigator.dart';
 import 'package:flutter/material.dart';
+import 'package:app/core/design/navigator.dart';
 
 enum MessageType { success, warning, error }
 
-Future<void> AppShowMsg(
+Future<void> appShowMsg(
     String msg, {
       MessageType type = MessageType.success,
       Duration duration = const Duration(seconds: 6),
@@ -28,7 +28,7 @@ Future<void> AppShowMsg(
       content: Text(
         msg,
         textAlign: TextAlign.center,
-        style: TextStyle(
+        style: const TextStyle(
           fontSize: 16,
           fontWeight: FontWeight.w600,
           color: Colors.white,

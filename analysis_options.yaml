@@ -3,7 +3,6 @@ include: package:flutter_lints/flutter.yaml
 analyzer:
   errors:
     unused_import: ignore
-
     avoid_print: ignore
     prefer_const_constructors: ignore
     prefer_const_literals_to_create_immutables: ignore
@@ -17,6 +16,8 @@ analyzer:
     unnecessary_string_interpolations: ignore
     body_might_complete_normally_nullable: ignore
     depend_on_referenced_packages: ignore
+
+
 
 linter:
   rules:

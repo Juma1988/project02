@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 final navigatorKey = GlobalKey<NavigatorState>();
 
-Future AppGoto(
+Future appGoto(
   Widget page, {
   bool keepHistory = true,
   bool isReplacement = false,
@@ -18,7 +18,7 @@ Future AppGoto(
   return Navigator.pushAndRemoveUntil(
     navigatorKey.currentContext!,
     MaterialPageRoute(
-      builder: (Context) => page,
+      builder: (context) => page,
     ),
     (route) => keepHistory,
   );

@@ -1,32 +1,30 @@
-import 'package:app/core/design/navigator.dart';
-import 'package:app/core/design/theme.dart';
-import 'package:app/core/logic/service_locator.dart';
-import 'package:app/pages/view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
+import 'package:app/core/design/navigator.dart';
+import 'package:app/core/design/theme.dart';
+import 'package:app/pages/screens/home_screen.dart';
 
 late int initScreen;
 
 Future<void> main() async {
-  initServiceLocator();
+  // initServiceLocator();
   WidgetsFlutterBinding.ensureInitialized();
 
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp();
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      designSize: Size(375, 812),
+      designSize: const Size(375, 812),
       builder: (context, child) => MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'ProjectAmit63',
+        title: 'Recipe',
         navigatorKey: navigatorKey,
-        home: HomePage(),
+        home: HomeScreen(),
         theme: lightMode,
         darkTheme: darkMode,
       ),
@@ -38,4 +36,5 @@ class MyApp extends StatelessWidget {
 git add .
 git commit -m " **commit** "
 git push origin main
+
  */
